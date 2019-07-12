@@ -1,0 +1,141 @@
+.footer {
+	
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 5rem 0;
+
+	//STAY CONNECTED
+	&__box--1 {
+		width: 30%;
+	}
+	//COMMITED TO SMDC
+	&__box--2 {
+		width: 30%;
+	}
+	//SITEMAP
+	&__box--3 {
+		width: 15%;
+	}
+
+
+	&__heading {
+		font-size: 2rem;
+		margin-bottom: 3rem;
+	}
+
+	&__detail { 
+		font-size: 1.6rem;
+		margin-bottom: 1.5rem;
+	}
+
+	&__newsletter {
+		display: flex;
+		margin-bottom: 1.5rem;
+	}
+
+	&__follow {
+		margin-bottom: 1.5rem;
+	}
+
+	&__form {
+		color: #222;
+		font-size: 1.6rem;
+		font-family: inherit;
+		padding: 1.5rem 2rem;
+		margin-bottom: 2.5rem;
+		margin-right: .5rem;
+		border-radius: 2px;
+		border: none;
+		background-color: rgba(255,255,255, 0.9);
+		transition: all .3s;
+		width: 100%;
+
+		&:focus {
+			outline: none;
+			box-shadow: var(--shadow-small);
+			border-bottom: 3px solid var(--color-primary-light);
+		}
+	}
+
+	// &__button {
+		
+	// }
+
+	&__social {
+		margin-bottom: 2.5rem;
+	}
+
+	&__social--item {
+		width: 5rem;
+		height: 5rem;
+		display: inline-block;
+		margin-right: 2rem;
+
+	  	-webkit-filter: drop-shadow(0 1px 3px rgba(0,0,0,.3));
+	  	filter: drop-shadow(0 1px 3px rgba(0,0,0,.3));
+		
+	}
+
+	&__item {
+
+		// list-style-type: disc;
+		&:not(:last-child) {
+			padding-bottom: 1rem;
+		}
+	}
+
+	&__message {
+		margin-bottom: 2rem;
+	}
+
+	&__logo {
+		width: 40%;
+	}
+
+	&__link {
+		color: #fff;
+
+		&:hover {
+			color: var(--color-secondary-light);
+		}
+	}
+}
+
+.esclanda {
+	
+	display: block;
+	float: right;
+
+	&__logo {
+		background-color: var(--color-primary);
+		display: inline-block;
+		padding: 1rem 2.5rem;
+		border: 3px solid #fff;
+	}
+
+}
+
+.footer__lower {
+	padding: 2rem;
+	background-color: var(--color-primary-dark);
+	display: flex;
+	justify-content: center;
+	font-size: 1.2rem;
+}
+
+// .footer__icon--location {
+// 		padding-right: .5rem;
+// 		height: 10rem;
+// 		width: 10rem;
+// 		background: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRkZGRkZGO30KPC9zdHlsZT4KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iNzUgNjYuMyA3NSAxMyA3MiAxMyA3MiA4NCAxOCA4NCAxOCA4NyA3NSA4NyIvPgoJPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSI3NyAxOCA3NyA4OSAyMyA4OSAyMyA5MiA4MCA5MiA4MCA3MC42IDgwIDE4Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJtNzAgOGgtNTd2NzRoNTd2LTc0em0tMzIuNiA2Mi42bC00LjUtNS4yIDAuMS0wLjEtNi02LjkgNS4yLTQuNSA2IDYuOSAxNS4zLTEzLjMgNC41IDUuMi0yMC42IDE3Ljl6bTIzLjYtMzAuNmgtMzl2LTRoMzl2NHptMC05aC0zOXYtNGgzOXY0em0wLTloLTM5di00aDM5djR6Ii8+Cjwvc3ZnPg==) no-repeat center center;
+// 		z-index: 999999;
+// }
+////testing only
+.logo-div-icon {
+	display: inline-block;
+	margin-right: .5rem;
+	height: 2rem;
+	width: 2rem;
+	background: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRkZGRkZGO30KPC9zdHlsZT4KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iNzUgNjYuMyA3NSAxMyA3MiAxMyA3MiA4NCAxOCA4NCAxOCA4NyA3NSA4NyIvPgoJPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSI3NyAxOCA3NyA4OSAyMyA4OSAyMyA5MiA4MCA5MiA4MCA3MC42IDgwIDE4Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJtNzAgOGgtNTd2NzRoNTd2LTc0em0tMzIuNiA2Mi42bC00LjUtNS4yIDAuMS0wLjEtNi02LjkgNS4yLTQuNSA2IDYuOSAxNS4zLTEzLjMgNC41IDUuMi0yMC42IDE3Ljl6bTIzLjYtMzAuNmgtMzl2LTRoMzl2NHptMC05aC0zOXYtNGgzOXY0em0wLTloLTM5di00aDM5djR6Ii8+Cjwvc3ZnPg==) no-repeat center center;
+}

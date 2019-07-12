@@ -1,0 +1,166 @@
+.section-buyers {
+	
+	display: flex;
+	justify-content: space-between;
+
+
+	&__left {
+		width: 65%;
+
+		@media only screen and (max-width: $bp-medium-3){
+			width: 100%;
+		}
+	}
+
+	&__right {
+		width: 30%;
+
+		@media only screen and (max-width: $bp-medium-3){
+			width: 100%;
+			padding-top: 4rem;
+		}
+	}
+}
+
+
+
+
+////steps////
+.buyers {
+	background-color: var(--color-white);
+	padding:2rem;
+	margin-bottom: 4rem;
+
+	@media only screen and (max-width: $bp-medium-3){
+		padding: 4rem;
+	}
+
+	@media only screen and (max-width: $bp-small-2){
+		padding: 1.5rem;
+	}
+
+	&__steps {
+		padding: 2rem;
+
+		@media only screen and (max-width: $bp-medium-3){
+			margin-left: .8rem;
+		}
+	}
+
+	&__item {
+		list-style-type: decimal;
+	}
+
+	&__reservation {
+		color: red;
+		font-weight: 600;
+	}
+}
+
+
+//////////buyers page///////
+.section-bank {
+	
+}
+
+.bank {
+
+	background-color: var(--color-white);
+	padding:2rem;
+	margin-bottom: 4rem;
+
+	@media only screen and (max-width: $bp-medium-3){
+		padding: 4rem;
+	}
+
+	@media only screen and (max-width: $bp-small-2){
+		padding: 2rem;
+	}
+
+	&__overview {
+		padding: 2rem 0;
+	}
+
+	&__requirements {
+		padding: 2rem;
+	}
+
+	&__elegibility {
+		padding: 1rem;
+	}
+
+	&__item {
+		list-style-type: disc;
+	}
+
+	&__basic-documents {
+		padding: 1rem;
+	}
+
+	&__income-documents{
+		padding: 1rem;
+	}
+}
+
+
+
+.questions {
+	background-color: var(--color-white);
+	padding:2rem;
+
+	@media only screen and (max-width: $bp-medium-3){
+		padding: 4rem;
+	}
+
+	@media only screen and (max-width: $bp-small-2){
+		padding: 2rem;
+	}
+
+	&__box {
+		// padding: 2rem;
+	}
+
+	&__title {
+		padding-bottom: 1rem;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			padding-bottom: 2.5rem;
+		}
+	}
+}
+
+.bank-logo {
+	
+	margin-top: 10rem;
+
+	&__box {
+		@media only screen and (max-width: $bp-medium-3){
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+
+	&__image {
+		display: block;
+		margin:4rem auto;
+		box-shadow: var(--shadow-small);
+
+		@media only screen and (max-width: $bp-medium-3){
+			// flex: 0 0 30%;
+			max-width: 100%;
+			height: auto;
+			margin:2rem 2rem;
+		}
+
+		@media only screen and (max-width: $bp-small-3){
+			// flex: 0 0 30%;
+			// width: 100%;
+			// height: auto;
+
+			margin: 1.5rem 1.5rem;
+		}
+	}
+}

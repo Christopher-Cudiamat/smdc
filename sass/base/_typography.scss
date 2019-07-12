@@ -1,0 +1,67 @@
+body {
+	font-family: Verdana, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.8;
+	color: #555555;
+}
+
+.heading-primary {
+	color: var(--color-white);
+	width: 100%;
+
+	&--main {
+		font-family: 'Caveat', cursive;
+		display: block;
+		font-size: 10rem;
+		// font-weight: 400;
+		// text-transform: uppercase;
+		letter-spacing: .8rem;
+		transform: rotate(-2deg);
+		font-size: 10rem;
+		animation-name: moveInLeft;
+		animation-duration: 2s;
+		animation-timing-function: ease-out;
+	}
+
+
+	&--secondary {
+		margin-top: -1rem;
+		margin-bottom: 3rem;
+		display: block;
+		font-size: 4rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: .2rem;
+
+		animation-name: moveInRight;
+		animation-duration: 2s;
+		animation-timing-function: ease-out;
+	}
+}
+
+.heading-secondary {
+	color: var(--color-primary-dark);
+	font-size: 2.5rem;
+	font-weight: 600;
+	// text-decoration: underline overline;
+}
+
+.heading-tertiary {
+	color: var(--color-white);
+	margin-top: 10rem;
+	font-size: 4rem;
+	font-weight: 400;
+	letter-spacing: .2rem;
+
+	@media only screen and (max-width: $bp-medium-1){
+		font-size: 3.5rem;
+	}
+}
+
+.overview {
+	text-align: center;
+	margin: auto;
+	width: 70%;
+	margin-bottom: 6rem;
+}

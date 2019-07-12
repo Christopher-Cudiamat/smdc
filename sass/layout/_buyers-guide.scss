@@ -1,0 +1,94 @@
+
+.buyers-guide-box {
+	display: flex;
+	justify-content: space-between;
+	padding: 8rem 0 ;
+	
+
+}
+
+.buyers-guide {
+		color: var(--color-white);
+		width: 49%;
+		text-align: center;
+		// line-height: 0px;
+
+		position: relative;
+
+	&__image {
+		width: 100%;
+		opacity: .4;
+		border-radius: $border-radius;
+	}
+
+	&__content {
+		margin-top: -3rem;
+		padding: 1rem;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		// justify-content: space-around ;
+		position: absolute;
+		
+		@include position-center;
+
+		
+	}
+
+	&__header {
+		font-size: 2.5rem;
+		padding-bottom: 2.8rem;
+	}
+
+	&__icon {
+		padding-bottom: 1.5rem;
+	}
+
+	&__text {
+		font-size: 1.8rem;
+		padding: 1rem 2rem;
+
+		@media only screen and (max-width: $bp-medium-3){
+			font-size: 2rem;
+		}
+	}
+
+	&__link {
+		color: var(--color-secondary-light);
+		font-size: 1.6rem;
+
+		position: absolute;
+		top: 90%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.caret-down {
+	display: flex;
+	justify-content: center;
+	background-color: var(--color-tertiary-dark);
+
+	&__image {
+		margin-bottom: 3rem;
+		margin-top: -1rem;
+	}
+}
+
+
+.logo-div {
+	width: 13rem;
+	height: 13rem;
+	background: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRkZGRkZGO30KPC9zdHlsZT4KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iNzUgNjYuMyA3NSAxMyA3MiAxMyA3MiA4NCAxOCA4NCAxOCA4NyA3NSA4NyIvPgoJPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSI3NyAxOCA3NyA4OSAyMyA4OSAyMyA5MiA4MCA5MiA4MCA3MC42IDgwIDE4Ii8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJtNzAgOGgtNTd2NzRoNTd2LTc0em0tMzIuNiA2Mi42bC00LjUtNS4yIDAuMS0wLjEtNi02LjkgNS4yLTQuNSA2IDYuOSAxNS4zLTEzLjMgNC41IDUuMi0yMC42IDE3Ljl6bTIzLjYtMzAuNmgtMzl2LTRoMzl2NHptMC05aC0zOXYtNGgzOXY0em0wLTloLTM5di00aDM5djR6Ii8+Cjwvc3ZnPg==) no-repeat center center;
+	
+	@media only screen and (max-width: $bp-medium-3){
+		width: 18rem;
+		height: 18rem;
+	}
+
+	@media only screen and (max-width: $bp-small-3){
+		width: 11rem;
+		height: 11rem;
+	}
+}

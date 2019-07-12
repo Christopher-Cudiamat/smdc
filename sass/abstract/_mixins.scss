@@ -1,0 +1,40 @@
+@mixin clearfix {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin position-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}  
+
+@mixin hero-composition {
+	border-bottom: 1rem solid var(--color-secondary);
+	width: 100%;
+	height: 50vh;
+	position: relative;	
+} 
+
+//MEDIA QUERIES
+
+
+//laptop and desktop////////////
+$bp-largest: 88em; //1400 px / 16px to get the em
+$bp-large-2: 75em; //1200 px / 16px to get the em
+$bp-large-1: 64em; //1024 px / 16px to get the em
+
+//ipad/////////////
+$bp-medium-3: 48em; //768 px / 16px to get the em
+$bp-medium-2: 40em; //640 px / 16px to get the em
+$bp-medium-1: 36em; //576 px / 16px to get the em
+
+//mobile/////////////
+$bp-small-3: 30em; // 480 px / 16px to get the em
+$bp-small-2: 26em; //423 px / 16px to get the em
+// $bp-small-1: 36em; //640 px / 16px to get the em
+

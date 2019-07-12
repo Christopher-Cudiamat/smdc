@@ -1,0 +1,69 @@
+.section-contact {
+	
+	background-color: rgba(250,250,250, 0.8);
+}
+
+.contact {
+
+	@media only screen and (max-width: $bp-largest){
+		width: 50%;
+	}
+
+
+	@media only screen and (max-width: $bp-medium-3){
+		width: 65%;
+	}
+
+	@media only screen and (max-width: $bp-medium-3){
+		width: 75%;
+	}
+
+	@media only screen and (max-width: $bp-medium-3){
+		width: 85%;
+	}
+
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-basis: 25%;
+		&:not(:last-child) {
+			padding-bottom: 5rem;
+		}
+
+		@media only screen and (max-width: $bp-large-2){
+			flex-basis: 30%;
+		}
+
+		@media only screen and (max-width: $bp-small-3){
+			flex-basis: 50%;
+		}
+
+	}
+
+	&__flag {
+		border-radius: 10%;
+		box-shadow: var(--shadow-small);
+		margin-bottom: 1.5rem;
+		transform: skew(-0.01turn, 0deg);
+		opacity: 0.8;
+
+		@media only screen and (max-width: $bp-medium-1){
+			width: 10rem;
+			height: auto;
+		}
+	}
+
+	&__number {
+
+	}
+
+	&__city {
+		
+	}
+}

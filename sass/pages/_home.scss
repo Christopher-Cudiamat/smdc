@@ -1,0 +1,33 @@
+// .clearfix::after {
+//   content: "";
+//   clear: both;
+//   display: table;
+// }
+
+.search-properties {
+	margin-top: -3rem;
+}
+
+
+// .section-properties {
+
+// }
+
+
+.section-buyers-guide {
+	background-color: var(--color-primary-dark);
+	color: var(--color-white);
+}
+
+
+.section-form {
+	background: url('../assets/img/Index/background-form3.png') no-repeat center center;
+	background-size: cover; 
+
+}
+
+.section-footer {
+	color: #fff;
+	background-color: var(--color-primary);
+}
+
